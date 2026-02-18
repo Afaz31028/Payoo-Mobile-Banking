@@ -7,6 +7,7 @@ document.getElementById('login-btn').addEventListener('click', function () {
         window.location.assign('/home.html');
     }
     else{
-        alert("Login Failed")
+        alert("Login Failed");
+        return;
     }
 })
