@@ -80,6 +80,34 @@
         </div>
     </section>
     <section class="w-11/12 mx-auto">
+        <h1 class="text-2xl font-bold">Add Money</h1>
+        <div class="card-body w-full bg-base-100 rounded-2xl p-5">
+            <fieldset class="fieldset">
+                <label class="label text-neutral font-bold text-[14px]">Select A Bank</label>
+                <select id="bank-name"  class="select w-full rounded-2xl bg-base-200">
+                    <option disabled selected>Select a Bank</option>
+                    <option>DBBL</option>
+                    <option>IBBL</option>
+                    <option>Agrani Bank</option>
+                </select>
+                <label class="label text-neutral font-bold text-[14px]">Bank Account Number</label>
+                <input type="email" id="personal-account-number"
+                    class="w-full input rounded-2xl bg-base-300 py-5 px-4"
+                    placeholder="Enter Your Bank Account Number" />
+                <label class="label text-neutral font-bold text-[14px]">Amount to Add</label>
+                <input type="text" id="added-amount" class="w-full input rounded-2xl bg-base-300 py-5 px-4"
+                    placeholder="Enter Amount to Add" />
+                <label class="label text-neutral font-bold text-[14px]">PIN</label>
+                <input maxlength="4" minlength="4" type="password" id="pin-number"
+                    class="w-full input rounded-2xl bg-base-300 py-5 px-4" placeholder="Enter 4 Digit Pin Number" />
+                <div class="btn-login flex justify-center">
+                    <button id="addMoney-btn"
+                        class="btn btn-neutral w-50 mt-6 py-6 rounded-full bg-primary border-0">Add Money</button>
+                </div>
+            </fieldset>
+        </div>
+    </section>
+    <section class="w-11/12 mx-auto">
         <h1 class="text-2xl font-bold">Cash Out</h1>
         <div class="card-body w-full bg-base-100 rounded-2xl p-5">
                 <fieldset class="fieldset">
@@ -99,5 +127,7 @@
             </div>
     </section>
     <script src="js/cashout.js"></script>
+    <script src="js/addMoney.js"></script>
+    <script src="js/machine.js"></script>
 </body>
 </html>
