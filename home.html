@@ -39,7 +39,7 @@
                 <img src="./assets/logo.png" alt="">
             </div>
             <div class="content">
-                <h3 class="text-2xl font-bold">$<span id="available-balance" class="text-2xl font-bold">10000</span></h3>
+                <h3 class="text-2xl font-bold">$<span id="available-balance" class="text-2xl font-bold">50000</span></h3>
                 <p class="text-neutral/50">Available Balance</p>
             </div>
         </div>
@@ -126,8 +126,42 @@
                 </fieldset>
             </div>
     </section>
+    <section class="w-11/12 mx-auto">
+        <h1 class="text-2xl font-bold">Transfer Money</h1>
+        <div class="card-body w-full bg-base-100 rounded-2xl p-5">
+                <fieldset class="fieldset">
+                    <label class="label text-neutral font-bold text-[14px]">User Account Number</label>
+                    <input maxlength="11" minlength="11" type="email" id="user-acc-number" class="w-full input rounded-2xl bg-base-300 py-5 px-4"
+                        placeholder="Enter 11 Digits Account Number"/>
+                    <label class="label text-neutral font-bold text-[14px]">Amount</label>
+                    <input type="text" id="transferred-amount" class="w-full input rounded-2xl bg-base-300 py-5 px-4"
+                        placeholder="Enter Amount to transfer"/>
+                    <label class="label text-neutral font-bold text-[14px]">PIN Number</label>
+                    <input maxlength="4" minlength="4" type="password" id="transfer-pin" class="w-full input rounded-2xl bg-base-300 py-5 px-4"
+                        placeholder="Enter Your 4 Digit Pin"/>
+                    <div class="btn-login flex justify-center">
+                        <button id="transfer-btn" class="btn btn-neutral w-50 mt-6 py-6 rounded-full bg-primary border-0">Send Now</button>
+                    </div>
+                </fieldset>
+            </div>
+    </section>
+    <section class="w-11/12 mx-auto">
+         <h1 class="text-2xl font-bold">Get Bonus</h1>
+        <div class="card-body w-full bg-base-100 rounded-2xl p-5">
+                <fieldset class="fieldset">
+                    <label class="label text-neutral font-bold text-[14px]">Enter Bonus Coupon</label>
+                    <input type="email" id="coupon-code" class="w-full input rounded-2xl bg-base-300 py-5 px-4"
+                        placeholder="Enter Your Coupon"/>
+                    <div class="btn-login flex justify-center">
+                        <button id="bonus-btn" class="btn btn-neutral w-50 mt-6 py-6 rounded-full bg-primary border-0">Get Bonus</button>
+                    </div>
+                </fieldset>
+            </div>
+    </section>
     <script src="js/cashout.js"></script>
     <script src="js/addMoney.js"></script>
     <script src="js/machine.js"></script>
+    <script src="js/transfer.js"></script>
+    <script src="js/bonus.js"></script>
 </body>
 </html>
