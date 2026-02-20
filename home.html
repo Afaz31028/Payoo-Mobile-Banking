@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,14 +33,17 @@
         }
     </style>
 </head>
+
 <body class="font-outfit min-h-screen max-w-md bg-base-200 mx-auto">
-    <header class="w-11/12 mx-auto flex justify-between items-center border-b-2 border-gray-300 py-6 sticky top-0 bg-base-200 z-10">
+    <header
+        class="w-11/12 mx-auto flex justify-between items-center border-b-2 border-gray-300 py-6 sticky top-0 bg-base-200 z-10">
         <div class="left flex gap-2">
             <div class="logo w-[60px]">
                 <img src="./assets/logo.png" alt="">
             </div>
             <div class="content">
-                <h3 class="text-2xl font-bold">$<span id="available-balance" class="text-2xl font-bold">50000</span></h3>
+                <h3 class="text-2xl font-bold">$<span id="available-balance" class="text-2xl font-bold">50000</span>
+                </h3>
                 <p class="text-neutral/50">Available Balance</p>
             </div>
         </div>
@@ -49,31 +53,39 @@
     </header>
     <section class="py-10 px-5">
         <div class="hero-left">
-            <h1 class="text-3xl font-bold font-neutral">Welcome to Pay<span class="tetx-2xl font-bold text-primary">oo</span> </h1>
-            <p class="text-neutral/50 mt-3">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+            <h1 class="text-3xl font-bold font-neutral">Welcome to Pay<span
+                    class="tetx-2xl font-bold text-primary">oo</span> </h1>
+            <p class="text-neutral/50 mt-3">Enjoy easy and convenient financial services with us. Cashout charge is low
+                and </p>
         </div>
         <div class="cards mx-auto grid grid-cols-3 gap-5 justify-center items-center-center mt-10">
-            <button class="py-5 px-1 bg-gray-200 rounded-2xl text-center hover:bg-blue-100 hover:border-2 hover:border-blue-600">
+            <button
+                class="py-5 px-1 bg-gray-200 rounded-2xl text-center hover:bg-blue-100 hover:border-2 hover:border-blue-600">
                 <img class="mx-auto w-[30px]" src="./assets/opt-1.png" alt="">
                 <p class="mt-4 text-[14px]">Add Money</p>
             </button>
-            <button class="py-5 px-1 bg-gray-200 rounded-2xl text-center  hover:bg-blue-100 hover:border-2 hover:border-blue-600">
+            <button
+                class="py-5 px-1 bg-gray-200 rounded-2xl text-center  hover:bg-blue-100 hover:border-2 hover:border-blue-600">
                 <img class="mx-auto w-[30px]" src="./assets/opt-2.png" alt="">
                 <p class="mt-4 text-[14px]">Cash Out</p>
             </button>
-            <button class="py-5 bg-gray-200 rounded-2xl text-center  hover:bg-blue-100 hover:border-2 hover:border-blue-600">
+            <button
+                class="py-5 bg-gray-200 rounded-2xl text-center  hover:bg-blue-100 hover:border-2 hover:border-blue-600">
                 <img class="mx-auto w-[30px]" src="./assets/opt-3.png" alt="">
                 <p class="mt-4 text-[14px]">Transfer Money</p>
             </button>
-            <button class="py-5 px-1 bg-gray-200 rounded-2xl text-center  hover:bg-blue-100 hover:border-2 hover:border-blue-600">
+            <button
+                class="py-5 px-1 bg-gray-200 rounded-2xl text-center  hover:bg-blue-100 hover:border-2 hover:border-blue-600">
                 <img class="mx-auto w-[30px]" src="./assets/opt-4.png" alt="">
                 <p class="mt-4 text-[14px]">Get Bonus</p>
             </button>
-            <button class="py-5 px-1 bg-gray-200 rounded-2xl text-center  hover:bg-blue-100 hover:border-2 hover:border-blue-600">
+            <button
+                class="py-5 px-1 bg-gray-200 rounded-2xl text-center  hover:bg-blue-100 hover:border-2 hover:border-blue-600">
                 <img class="mx-auto w-[30px]" src="./assets/opt-5.png" alt="">
                 <p class="mt-4 text-[14px]">Pay Bill</p>
             </button>
-            <button class="py-5 px-1 bg-gray-200 rounded-2xl text-center  hover:bg-blue-100 hover:border-2 hover:border-blue-600">
+            <button id="transactions"
+                class="py-5 px-1 bg-gray-200 rounded-2xl text-center  hover:bg-blue-100 hover:border-2 hover:border-blue-600">
                 <img class="mx-auto w-[30px]" src="./assets/opt-6.png" alt="">
                 <p class="mt-4 text-[14px]">Transactions</p>
             </button>
@@ -84,15 +96,14 @@
         <div class="card-body w-full bg-base-100 rounded-2xl p-5">
             <fieldset class="fieldset">
                 <label class="label text-neutral font-bold text-[14px]">Select A Bank</label>
-                <select id="bank-name"  class="select w-full rounded-2xl bg-base-200">
+                <select id="bank-name" class="select w-full rounded-2xl bg-base-200">
                     <option disabled selected>Select a Bank</option>
                     <option>DBBL</option>
                     <option>IBBL</option>
                     <option>Agrani Bank</option>
                 </select>
                 <label class="label text-neutral font-bold text-[14px]">Bank Account Number</label>
-                <input type="email" id="personal-account-number"
-                    class="w-full input rounded-2xl bg-base-300 py-5 px-4"
+                <input type="email" id="personal-account-number" class="w-full input rounded-2xl bg-base-300 py-5 px-4"
                     placeholder="Enter Your Bank Account Number" />
                 <label class="label text-neutral font-bold text-[14px]">Amount to Add</label>
                 <input type="text" id="added-amount" class="w-full input rounded-2xl bg-base-300 py-5 px-4"
@@ -110,58 +121,99 @@
     <section class="w-11/12 mx-auto">
         <h1 class="text-2xl font-bold">Cash Out</h1>
         <div class="card-body w-full bg-base-100 rounded-2xl p-5">
-                <fieldset class="fieldset">
-                    <label class="label text-neutral font-bold text-[14px]">Agent Number</label>
-                    <input maxlength="11" minlength="11" type="email" id="agent-number" class="w-full input rounded-2xl bg-base-300 py-5 px-4"
-                        placeholder="Enter Agent's 11 Digits Number"/>
-                    <label class="label text-neutral font-bold text-[14px]">Amount</label>
-                    <input type="text" id="Withdrawal-amount" class="w-full input rounded-2xl bg-base-300 py-5 px-4"
-                        placeholder="Enter Amount for Withdraw"/>
-                    <label class="label text-neutral font-bold text-[14px]">PIN</label>
-                    <input maxlength="4" minlength="4" type="password" id="pin-Number" class="w-full input rounded-2xl bg-base-300 py-5 px-4"
-                        placeholder="Enter Your 4 Digit Pin"/>
-                    <div class="btn-login flex justify-center">
-                        <button id="cashout-btn" class="btn btn-neutral w-50 mt-6 py-6 rounded-full bg-primary border-0">Withdral Money</button>
-                    </div>
-                </fieldset>
-            </div>
+            <fieldset class="fieldset">
+                <label class="label text-neutral font-bold text-[14px]">Agent Number</label>
+                <input maxlength="11" minlength="11" type="email" id="agent-number"
+                    class="w-full input rounded-2xl bg-base-300 py-5 px-4"
+                    placeholder="Enter Agent's 11 Digits Number" />
+                <label class="label text-neutral font-bold text-[14px]">Amount</label>
+                <input type="text" id="Withdrawal-amount" class="w-full input rounded-2xl bg-base-300 py-5 px-4"
+                    placeholder="Enter Amount for Withdraw" />
+                <label class="label text-neutral font-bold text-[14px]">PIN</label>
+                <input maxlength="4" minlength="4" type="password" id="pin-Number"
+                    class="w-full input rounded-2xl bg-base-300 py-5 px-4" placeholder="Enter Your 4 Digit Pin" />
+                <div class="btn-login flex justify-center">
+                    <button id="cashout-btn"
+                        class="btn btn-neutral w-50 mt-6 py-6 rounded-full bg-primary border-0">Withdral Money</button>
+                </div>
+            </fieldset>
+        </div>
     </section>
     <section class="w-11/12 mx-auto">
         <h1 class="text-2xl font-bold">Transfer Money</h1>
         <div class="card-body w-full bg-base-100 rounded-2xl p-5">
-                <fieldset class="fieldset">
-                    <label class="label text-neutral font-bold text-[14px]">User Account Number</label>
-                    <input maxlength="11" minlength="11" type="email" id="user-acc-number" class="w-full input rounded-2xl bg-base-300 py-5 px-4"
-                        placeholder="Enter 11 Digits Account Number"/>
-                    <label class="label text-neutral font-bold text-[14px]">Amount</label>
-                    <input type="text" id="transferred-amount" class="w-full input rounded-2xl bg-base-300 py-5 px-4"
-                        placeholder="Enter Amount to transfer"/>
-                    <label class="label text-neutral font-bold text-[14px]">PIN Number</label>
-                    <input maxlength="4" minlength="4" type="password" id="transfer-pin" class="w-full input rounded-2xl bg-base-300 py-5 px-4"
-                        placeholder="Enter Your 4 Digit Pin"/>
-                    <div class="btn-login flex justify-center">
-                        <button id="transfer-btn" class="btn btn-neutral w-50 mt-6 py-6 rounded-full bg-primary border-0">Send Now</button>
-                    </div>
-                </fieldset>
-            </div>
+            <fieldset class="fieldset">
+                <label class="label text-neutral font-bold text-[14px]">User Account Number</label>
+                <input maxlength="11" minlength="11" type="email" id="user-acc-number"
+                    class="w-full input rounded-2xl bg-base-300 py-5 px-4"
+                    placeholder="Enter 11 Digits Account Number" />
+                <label class="label text-neutral font-bold text-[14px]">Amount</label>
+                <input type="text" id="transferred-amount" class="w-full input rounded-2xl bg-base-300 py-5 px-4"
+                    placeholder="Enter Amount to transfer" />
+                <label class="label text-neutral font-bold text-[14px]">PIN Number</label>
+                <input maxlength="4" minlength="4" type="password" id="transfer-pin"
+                    class="w-full input rounded-2xl bg-base-300 py-5 px-4" placeholder="Enter Your 4 Digit Pin" />
+                <div class="btn-login flex justify-center">
+                    <button id="transfer-btn"
+                        class="btn btn-neutral w-50 mt-6 py-6 rounded-full bg-primary border-0">Send Now</button>
+                </div>
+            </fieldset>
+        </div>
     </section>
     <section class="w-11/12 mx-auto">
-         <h1 class="text-2xl font-bold">Get Bonus</h1>
+        <h1 class="text-2xl font-bold">Get Bonus</h1>
         <div class="card-body w-full bg-base-100 rounded-2xl p-5">
-                <fieldset class="fieldset">
-                    <label class="label text-neutral font-bold text-[14px]">Enter Bonus Coupon</label>
-                    <input type="email" id="coupon-code" class="w-full input rounded-2xl bg-base-300 py-5 px-4"
-                        placeholder="Enter Your Coupon"/>
-                    <div class="btn-login flex justify-center">
-                        <button id="bonus-btn" class="btn btn-neutral w-50 mt-6 py-6 rounded-full bg-primary border-0">Get Bonus</button>
-                    </div>
-                </fieldset>
-            </div>
+            <fieldset class="fieldset">
+                <label class="label text-neutral font-bold text-[14px]">Enter Bonus Coupon</label>
+                <input type="email" id="coupon-code" class="w-full input rounded-2xl bg-base-300 py-5 px-4"
+                    placeholder="Enter Your Coupon" />
+                <div class="btn-login flex justify-center">
+                    <button id="bonus-btn" class="btn btn-neutral w-50 mt-6 py-6 rounded-full bg-primary border-0">Get
+                        Bonus</button>
+                </div>
+            </fieldset>
+        </div>
     </section>
+    <section class="w-11/12 mx-auto">
+        <h1 class="text-2xl font-bold">Pay Bill</h1>
+        <div class="card-body w-full bg-base-100 rounded-2xl p-5">
+            <fieldset class="fieldset">
+                <label class="label text-neutral font-bold text-[14px]">Select to Pay</label>
+                <select id="payBill-bank" class="select w-full rounded-2xl bg-base-200">
+                    <option disabled selected>Select a Bank</option>
+                    <option>DBBL</option>
+                    <option>IBBL</option>
+                    <option>Agrani Bank</option>
+                </select>
+                <label class="label text-neutral font-bold text-[14px]">Biller Account Number</label>
+                <input type="email" id="biller-number" class="w-full input rounded-2xl bg-base-300 py-5 px-4"
+                    placeholder="Enter Account Number" />
+                <label class="label text-neutral font-bold text-[14px]">Amount to Pay</label>
+                <input type="text" id="pay-bill-amount" class="w-full input rounded-2xl bg-base-300 py-5 px-4"
+                    placeholder="Enter Amount to Add" />
+                <label class="label text-neutral font-bold text-[14px]">Pin Number</label>
+                <input maxlength="4" minlength="4" type="password" id="payBill-pin"
+                    class="w-full input rounded-2xl bg-base-300 py-5 px-4" placeholder="Enter 4 Digit Pin Number" />
+                <div class="payBill-btn flex justify-center">
+                    <button id="payBill-btn"
+                        class="btn btn-neutral w-50 mt-6 py-6 rounded-full bg-primary border-0">Pay Now</button>
+                </div>
+            </fieldset>
+        </div>
+    </section>
+    <section class="w-11/12 mx-auto">
+        <h1 class="text-2xl font-bold">Transaction History</h1>
+        <div id="history-cards">
+
+        </div>
+    </section>
+
     <script src="js/cashout.js"></script>
     <script src="js/addMoney.js"></script>
     <script src="js/machine.js"></script>
     <script src="js/transfer.js"></script>
     <script src="js/bonus.js"></script>
+    <script src="js/payBill.js"></script>
 </body>
+
 </html>

@@ -22,7 +22,18 @@ document.getElementById('addMoney-btn').addEventListener('click',function(){
     }
     else{
         alert("Successfully Added Money");
-        document.getElementById('available-balance').innerText= availableBalance+ Number(addMoney);
+        const currentBal=availableBalance+ Number(addMoney);
+        document.getElementById('available-balance').innerText= currentBal;
+
+        const cashInSlip= document.createElement('div');
+        cashInSlip.innerHTML=`
+            <div class="mt-5 p-5 bg-amber-300 rounded-2xl text-[14px] font-bold">
+                Sucessfully Added money ${addMoney} taka on your acc. no. ${accountNum}
+                at ${new Date()}. Your Current Balance ${currentBal} taka.
+            </div>
+        `
+        const container=document.getElementById("history-cards");
+        container.appendChild(cashInSlip);
     }
    
 })

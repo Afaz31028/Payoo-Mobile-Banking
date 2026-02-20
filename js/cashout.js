@@ -21,6 +21,16 @@ document.getElementById('cashout-btn').addEventListener('click',function(){
     else{
         alert('Successfully Cash Out');
         document.getElementById('available-balance').innerText=newBalance;
+
+        const cashOutSlip= document.createElement('div');
+        cashOutSlip.innerHTML=`
+            <div class="mt-5 p-5 bg-amber-300 rounded-2xl text-[14px] font-bold">
+                Sucessfully cash out ${cashoutAmount} taka at ${new Date()}<br>
+                Now Available Balance ${newBalance} taka.
+            </div>
+        `
+        const container=document.getElementById("history-cards");
+        container.appendChild(cashOutSlip);
     }
 
 
