@@ -58,40 +58,40 @@
             <p class="text-neutral/50 mt-3">Enjoy easy and convenient financial services with us. Cashout charge is low
                 and </p>
         </div>
-        <div class="cards mx-auto grid grid-cols-3 gap-5 justify-center items-center-center mt-10">
-            <button
+        <div  id="allOptions" class="cards mx-auto grid grid-cols-3 gap-5 justify-center items-center-center mt-10">
+            <button onclick="selection('add-money-form')"
                 class="py-5 px-1 bg-gray-200 rounded-2xl text-center hover:bg-blue-100 hover:border-2 hover:border-blue-600">
                 <img class="mx-auto w-[30px]" src="./assets/opt-1.png" alt="">
                 <p class="mt-4 text-[14px]">Add Money</p>
             </button>
-            <button
+            <button onclick="selection('cashout-form')"
                 class="py-5 px-1 bg-gray-200 rounded-2xl text-center  hover:bg-blue-100 hover:border-2 hover:border-blue-600">
                 <img class="mx-auto w-[30px]" src="./assets/opt-2.png" alt="">
                 <p class="mt-4 text-[14px]">Cash Out</p>
             </button>
-            <button
+            <button onclick="selection('send-money-form')"
                 class="py-5 bg-gray-200 rounded-2xl text-center  hover:bg-blue-100 hover:border-2 hover:border-blue-600">
                 <img class="mx-auto w-[30px]" src="./assets/opt-3.png" alt="">
                 <p class="mt-4 text-[14px]">Transfer Money</p>
             </button>
-            <button
+            <button onclick="selection('get-bonus-form')"
                 class="py-5 px-1 bg-gray-200 rounded-2xl text-center  hover:bg-blue-100 hover:border-2 hover:border-blue-600">
                 <img class="mx-auto w-[30px]" src="./assets/opt-4.png" alt="">
                 <p class="mt-4 text-[14px]">Get Bonus</p>
             </button>
-            <button
+            <button onclick="selection('pay-bill-form')"
                 class="py-5 px-1 bg-gray-200 rounded-2xl text-center  hover:bg-blue-100 hover:border-2 hover:border-blue-600">
                 <img class="mx-auto w-[30px]" src="./assets/opt-5.png" alt="">
                 <p class="mt-4 text-[14px]">Pay Bill</p>
             </button>
-            <button id="transactions"
+            <button onclick="selection('history-container')"
                 class="py-5 px-1 bg-gray-200 rounded-2xl text-center  hover:bg-blue-100 hover:border-2 hover:border-blue-600">
                 <img class="mx-auto w-[30px]" src="./assets/opt-6.png" alt="">
                 <p class="mt-4 text-[14px]">Transactions</p>
             </button>
         </div>
     </section>
-    <section class="w-11/12 mx-auto">
+    <section id="add-money-form" class="w-11/12 mx-auto hidden mb-10">
         <h1 class="text-2xl font-bold">Add Money</h1>
         <div class="card-body w-full bg-base-100 rounded-2xl p-5">
             <fieldset class="fieldset">
@@ -118,7 +118,7 @@
             </fieldset>
         </div>
     </section>
-    <section class="w-11/12 mx-auto">
+    <section id="cashout-form" class="w-11/12 mx-auto mb-10">
         <h1 class="text-2xl font-bold">Cash Out</h1>
         <div class="card-body w-full bg-base-100 rounded-2xl p-5">
             <fieldset class="fieldset">
@@ -139,7 +139,7 @@
             </fieldset>
         </div>
     </section>
-    <section class="w-11/12 mx-auto">
+    <section id="send-money-form" class="w-11/12 mx-auto hidden mb-10">
         <h1 class="text-2xl font-bold">Transfer Money</h1>
         <div class="card-body w-full bg-base-100 rounded-2xl p-5">
             <fieldset class="fieldset">
@@ -160,7 +160,7 @@
             </fieldset>
         </div>
     </section>
-    <section class="w-11/12 mx-auto">
+    <section id="get-bonus-form" class="w-11/12 mx-auto hidden mb-10">
         <h1 class="text-2xl font-bold">Get Bonus</h1>
         <div class="card-body w-full bg-base-100 rounded-2xl p-5">
             <fieldset class="fieldset">
@@ -174,7 +174,7 @@
             </fieldset>
         </div>
     </section>
-    <section class="w-11/12 mx-auto">
+    <section id="pay-bill-form" class="w-11/12 mx-auto hidden mb-10">
         <h1 class="text-2xl font-bold">Pay Bill</h1>
         <div class="card-body w-full bg-base-100 rounded-2xl p-5">
             <fieldset class="fieldset">
@@ -201,11 +201,9 @@
             </fieldset>
         </div>
     </section>
-    <section class="w-11/12 mx-auto">
+    <section id="history-container" class="w-11/12 mx-auto hidden mb-10">
         <h1 class="text-2xl font-bold">Transaction History</h1>
-        <div id="history-cards">
-
-        </div>
+        <div id="history-cards"></div>
     </section>
 
     <script src="js/cashout.js"></script>
